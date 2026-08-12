@@ -167,179 +167,236 @@
 			</div>
 		</div>
 	</section> -->
+<style>
+	@media (max-width: 767px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero .slider-item {
+        min-height: auto;
+        padding: 100px 20px 60px;
+    }
+
+    .hero .slider-text {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Profile image comes first */
+    .hero-profile-image {
+        order: 1 !important;
+
+        width: 100%;
+        margin-bottom: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-image-wrapper {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 260px;
+        max-width: 75vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Text */
+    .hero-content {
+        order: 2 !important;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-content .text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Hello */
+    .hero-content .subheading {
+        font-size: 16px;
+    }
+
+    /* Main heading */
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Description */
+    .hero-content h2 {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 25px !important;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        padding: 12px 20px !important;
+        font-size: 14px;
+    }
+
+    /* Social icons */
+    .hero-social-links {
+        justify-content: center;
+        margin-top: 22px;
+        gap: 12px;
+    }
+
+    .hero-social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
 
 
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
+/* =========================================
+   SMALL MOBILE
+========================================= */
 
-			<div class="slider-item">
-				<div class="overlay"></div>
+@media (max-width: 480px) {
 
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
+    .hero .slider-item {
+        padding: 90px 15px 50px;
+    }
 
-						<!-- PROFILE IMAGE -->
-						<div class="one-third js-fullheight order-md-last hero-profile-image">
-							<div class="profile-image-wrapper">
-								<img src="images/soham-reshamwala.png" alt="Soham Reshamwala" class="profile-image">
-							</div>
-						</div>
+    .profile-image {
+        width: 220px;
+        max-width: 70vw;
+    }
 
-						<!-- TEXT -->
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.25;
+    }
 
-							<div class="text">
+    .hero-content h2 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
 
-								<span class="subheading">Hello!</span>
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
 
-								<h1 class="mb-4 mt-3">
-									I'm <span>Soham Reshamwala</span>
-								</h1>
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 220px;
+    }
 
-								<h2 class="mb-4">
-									A Software Developer Building Scalable Digital Solutions.
-								</h2>
+    .hero-social-links {
+        margin-top: 20px;
+    }
+}
+</style>
 
-								<p>
-    <a href="#contact-section" class="btn btn-primary py-3 px-4">
-        Hire me
-    </a>
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
 
-    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">
-        My works
-    </a>
-</p>
+        <div class="slider-item">
+            <div class="overlay"></div>
 
-<!-- SOCIAL LINKS -->
-<div class="hero-social-links">
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/soham-reshamwala"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-    </a>
+                    <div class="one-third js-fullheight order-md-last hero-profile-image">
+                        <div class="profile-image-wrapper">
+                            <img src="images/soham-reshamwala.png"
+                                 alt="Soham Reshamwala"
+                                 class="profile-image">
+                        </div>
+                    </div>
 
-    <!-- GitHub -->
-    <a href="https://github.com/sohamreshamwala0107"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-    </a>
+                    <div class="one-forth d-flex align-items-center ftco-animate hero-content">
 
-    <!-- Email -->
-    <a href="mailto:sohamreshamwala0107@gmail.com"
-       aria-label="Email">
-        <i class="fa-solid fa-envelope"></i>
-    </a>
+                        <div class="text">
 
-    <!-- Resume -->
-    <a href="documents/soham_reshamwala_resume.pdf"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Resume">
-        <i class="fa-solid fa-file-lines"></i>
-    </a>
+                            <span class="subheading">Hello!</span>
 
-    <!-- Twitter / X -->
-    <!--
-    <a href="https://x.com/YOUR-USERNAME"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Twitter">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    -->
+                            <h1 class="mb-4 mt-3">
+                                I'm <span>Soham Reshamwala</span>
+                            </h1>
 
-    <!-- Instagram -->
-    <!--
-    <a href="https://www.instagram.com/YOUR-USERNAME/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    -->
+                            <h2 class="mb-4">
+                                A Software Developer Building Scalable Digital Solutions.
+                            </h2>
 
-    <!-- YouTube -->
-    <!--
-    <a href="https://www.youtube.com/@YOUR-USERNAME"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-    -->
+                            <p class="hero-buttons">
+                                <a href="#contact-section"
+                                   class="btn btn-primary py-3 px-4">
+                                    Hire me
+                                </a>
 
-    <!-- Facebook -->
-    <!--
-    <a href="https://www.facebook.com/YOUR-USERNAME"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-    </a>
-    -->
+                                <a href="#projects-section"
+                                   class="btn btn-white btn-outline-white py-3 px-4">
+                                    My works
+                                </a>
+                            </p>
 
-</div>
+                            <!-- SOCIAL LINKS -->
+                            <div class="hero-social-links">
 
-						</div>
+                                <a href="https://www.linkedin.com/in/soham-reshamwala"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
 
-					</div>
-				</div>
-			</div>
+                                <a href="https://github.com/sohamreshamwala0107"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
 
+                                <a href="mailto:sohamreshamwala0107@gmail.com"
+                                   aria-label="Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
 
-			<div class="slider-item">
-				<div class="overlay"></div>
+                                <a href="documents/soham_reshamwala_resume.pdf"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Resume">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                </a>
 
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
+                            </div>
 
-						<!-- PROFILE IMAGE -->
-						<div class="one-third js-fullheight order-md-last hero-profile-image">
-							<div class="profile-image-wrapper">
-								<img src="images/soham-reshamwala.png" alt="Soham Reshamwala" class="profile-image">
-							</div>
-						</div>
+                        </div>
 
-						<!-- TEXT -->
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
+                    </div>
 
-							<div class="text">
+                </div>
+            </div>
+        </div>
 
-								<span class="subheading">Hello!</span>
-
-								<h1 class="mb-4 mt-3">
-									I'm a <span>Software Developer</span> based in India.
-								</h1>
-
-								<p>
-									<a href="#contact-section" class="btn btn-primary py-3 px-4">
-										Hire me
-									</a>
-
-									<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">
-										My works
-									</a>
-								</p>
-
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
+    </div>
+</section>
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
 			<div class="row d-flex">
